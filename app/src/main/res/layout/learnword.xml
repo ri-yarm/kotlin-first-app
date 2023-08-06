@@ -15,7 +15,9 @@
         android:background="@android:color/transparent"
         android:src="@drawable/ic_close_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="close button"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView"
@@ -24,11 +26,12 @@
         android:layout_marginHorizontal="33dp"
         android:layout_marginTop="86dp"
         android:text="Galaxy"
+        android:fontFamily="@font/nunito_semi_bold"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Лена пиздюк" />
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -62,8 +65,10 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:text="Сломать"
+                android:fontFamily="@font/rubik_regular"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,8 +97,10 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:text="Сон"
+                android:fontFamily="@font/rubik_regular"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -120,8 +127,10 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:text="Галактика"
+                android:fontFamily="@font/rubik_regular"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,8 +157,10 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:text="Утюг"
+                android:fontFamily="@font/rubik_regular"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
 
@@ -163,10 +174,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:visibility="gone"
-        android:text="Skip"
+        android:text="@string/button_skip"
         android:textColor="#fff"
-        android:backgroundTint="#2574FF"
-        />
+        android:backgroundTint="#2574FF" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -186,12 +196,15 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_correct"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="correct!"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct!"
+            android:text="@string/title_correct"
+            android:fontFamily="@font/rubik_regular"
             android:textColor="#fff"
             android:textSize="22sp"
             android:layout_marginStart="8dp"
@@ -206,7 +219,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginBottom="24dp"
-            android:text="Continue"
+            android:text="@string/button_continue"
+            android:fontFamily="@font/nunito_bold"
             android:textColor="#0EAD69"
             android:backgroundTint="#fff"
             android:background="@drawable/shape_button_footer"
